@@ -100,7 +100,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0 0 14px #000;
+    box-shadow: 0 0 10px #000;
     font-family: nototob;
     user-select: none;
     z-index: 10;
@@ -135,7 +135,7 @@ header{
     right: -340px;
     background-color: #b0b0b0c0;
     backdrop-filter: blur(6px);
-    box-shadow: 0 7px 14px #000;
+    box-shadow: 0 7px 10px #000;
     transition: all .2s;
     opacity: 0;
     z-index: 8;
