@@ -1,0 +1,217 @@
+@font-face{
+    font-family: nototo;
+    src: url("../font/Noto_Sans_JP/static/NotoSansJP-Regular.ttf")
+    format("truetype");
+}
+@font-face{
+    font-family: nototob;
+    src: url("../font/Noto_Sans_JP/static/NotoSansJP-Bold.ttf")
+    format("truetype");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: nototo;
+}
+
+.pics{
+    height: 250px;
+    width: 250px;
+    margin: 2px 5px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    user-select: none;
+    display: inline-block;
+    transition: all .1s;
+}
+.pics:hover{
+    filter: brightness(.82);
+}
+.pic_data{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(0deg, #000000b0, #00000080, #00000000);
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+.insect_name{
+    font-size: 16px;
+    font-family: nototob;
+}
+.scientific_name{
+    font-style: italic;
+    font-size: 12px;
+}
+
+#pic_up_win{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 101vw;
+    background-color: #000000b0;
+    backdrop-filter: blur(8px);
+    transition: opacity .2s;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0;
+    z-index: 9;
+}
+#pic_up_win[class="show"]{
+    opacity: 1;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#pic_up_inner{
+    width: 600px;
+    margin: 78px auto 0 auto;
+}
+#pic_up_img{
+    width: 100%;
+}
+#pic_up_insect_name{
+    font-size: 18px;
+    font-family: nototob;
+}
+#pic_up_scientific_name{
+    font-size: 14px;
+    font-style: italic;
+}
+
+header{
+    margin: 0;
+    width: 100vw;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    background-color: #bbb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 14px #000;
+    font-family: nototob;
+    user-select: none;
+    z-index: 10;
+}
+#btn_menu{
+    margin: 0;
+    height: 100%;
+    width: 80px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#btn_addData{
+    margin: 0;
+    height: 100%;
+    width: 80px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#add_menu, #app_menu{
+    height: 100vh;
+    width: 300px;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    right: -340px;
+    background-color: #b0b0b0c0;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 7px 14px #000;
+    transition: all .2s;
+    opacity: 0;
+    z-index: 8;
+}
+#add_menu{
+    right: -340px;
+}
+#add_menu[class="show"]{
+    right: 0;
+    opacity: 1;
+}
+.form_txt{
+    font-size: 15px;
+}
+input[type="text"]{
+    font-size: 14px;
+    width: 220px;
+}
+input[type="button"] , input[type="submit"]{
+    border-radius: 4px;
+    outline: none;
+    border: solid 1px #999;
+    padding: 3px;
+    font-size: 14px;
+    background-color: #e5e5e5;
+}
+input[type="button"]:hover, input[type="submit"]:hover{
+    background-color: #d0d0d0;
+    border: solid 1px #777;
+}
+input[type="button"][name="submit"]{
+    background-color: #0070ff;
+    color: #fff;
+}
+input[type="button"][name="submit"]:hover{
+    background-color: #005fdb;
+    color: #fff;
+}
+#submit_error{
+    color: #f00;
+}
+
+#app_menu{
+    left: -340px;
+}
+#app_menu[class="show"]{
+    left: 0;
+    opacity: 1;
+}
+
+form[name="data_input"], #app_menu_inner{
+    margin-top: 78px;
+}
+
+h2{
+    font-weight: normal;
+    font-family: nototob;
+    font-size: 20px;
+    user-select: none;
+}
+
+#objects{
+    margin-top: 75px;
+}
+#default{
+    margin-left: 5px;
+}
+#search_all{
+    margin-left: 5px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.font_white{
+    color: #fff;
+}
+
+#version{
+    font-style: italic;
+}
