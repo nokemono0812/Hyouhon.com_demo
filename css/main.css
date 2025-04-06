@@ -73,7 +73,8 @@ body{
     overflow-x: hidden;
 }
 #pic_up_inner{
-    width: 600px;
+    width: 590px;
+    padding: 0 5px;
     margin: 78px auto 0 auto;
 }
 #pic_up_img{
