@@ -11,12 +11,16 @@
     <p>
         CSVデータ入力:<br>
         <textarea id="csv_input"></textarea><br>
+        <input type="button" onclick="inputSample()" value="サンプルCSVを入力"><br>
         <input type="button" onclick="submit()" value="送信">
     </p>
     <p>
         <div id="graph"></div>
         スケール: <span id="scale_text">1</span>X<br>
         <input type="button" onclick="viewLabel()" value="データラベル非表示" id="btn_change_label">
+    </p>
+    <p>
+        バージョン: <span id="version"></span>
     </p>
     <script src="source/main.js"></script>
     <script src="source/graph.js"></script>

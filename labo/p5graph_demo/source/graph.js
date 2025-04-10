@@ -36,6 +36,7 @@ function drawPoint(){
 
         if(dataType == "A"){stroke(255,0,0);fill(255,0,0);}
         if(dataType == "B"){stroke(0,0,255);fill(0,0,255);}
+        if(dataType == "C"){stroke(0,255,0);fill(0,255,0);}
 
         point(newX, newY);
         if(viewDataLabel){
